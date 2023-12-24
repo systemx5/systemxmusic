@@ -68,10 +68,10 @@ def stream_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="⛦ ᴏᴡɴᴇʀ ⛦", url=f"https://t.me/MAHTOxOFFICIAL"
+                text=" ᴏᴡɴᴇʀ ", url=f"https://t.me/MAHTOxOFFICIAL"
             ),
             InlineKeyboardButton(
-                text="⛦ ꜱᴜᴘᴘᴏʀᴛ 🥀", url=f"https://t.me/TOXIC_VIP_CONFIG_MOD"
+                text=" ꜱᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/TOXIC_VIP_CONFIG_MOD"
             ),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
@@ -90,10 +90,10 @@ def stream_markup(_, chat_id):
         ],
          [
             InlineKeyboardButton(
-                text="⛦ ᴏᴡɴᴇʀ ⛦", url=f"https://t.me/MAHTOxOFFICIAL"
+                text=" ᴏᴡɴᴇʀ ", url=f"https://t.me/MAHTOxOFFICIAL"
             ),
             InlineKeyboardButton(
-                text="⛦ ꜱᴜᴘᴘᴏʀᴛ 🥀", url=f"https://t.me/MAHTOxOFFICIAL"
+                text=" ꜱᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/MAHTOxOFFICIAL"
             ),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
