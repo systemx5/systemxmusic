@@ -9,8 +9,8 @@ from config import MUSIC_BOT_NAME
 @app.on_message(filters.command(["alive"]))
 async def start(client: Client, message: Message):
     await message.reply_video(
-        video=f"https://graph.org/file/e999c40cb700e7c684b75.mp4",
-        caption=f"ʜᴇʏ {message.from_user.mention}\n\n ɪ ᴀᴍ {MUSIC_BOT_NAME}\n\n ɪ ᴀᴍ ғᴀsᴛ ᴀɴᴅ ᴩᴏᴡᴇʀғᴜʟ ᴍᴜsɪᴄ ᴩʟᴀʏᴇʀ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ғᴇᴀᴛᴜʀᴇs.\n\n ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ ᴊᴏɪɴ ᴏᴜʀ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ🤍...\n\n━━━━━━━━━━━━━━━━━━",
+        video=f"https://te.legra.ph/file/fb71d000872e4e657453f.mp4",
+        caption=f"ʜᴇʏ {message.from_user.mention}\n\n ɪ ᴀᴍ {MUSIC_BOT_NAME}\n\n ɪ ᴀᴍ ғᴀsᴛ ᴀɴᴅ ᴩᴏᴡᴇʀғᴜʟ ᴍᴜsɪᴄ ᴩʟᴀʏᴇʀ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ғᴇᴀᴛᴜʀᴇs.\n\n ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ ᴊᴏɪɴ ᴏᴜʀ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ...\n\n━━━━━━━━━━━━━━━━━━",
         reply_markup=InlineKeyboardMarkup(
             [
                [
