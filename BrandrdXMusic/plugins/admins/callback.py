@@ -182,7 +182,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 try:
                     await CallbackQuery.edit_message_text(
-                        f"➻ sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ 🎄\n│ \n└ʙʏ : {mention} 🥀"
+                        f" sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ \n│ \n└ʙʏ : {mention} "
                     )
                     await CallbackQuery.message.reply_text(
                         text=_["admin_6"].format(
@@ -194,7 +194,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                 except:
                     return
         else:
-            txt = f"➻ sᴛʀᴇᴀᴍ ʀᴇ-ᴘʟᴀʏᴇᴅ 🎄\n│ \n└ʙʏ : {mention} 🥀"
+            txt = f" sᴛʀᴇᴀᴍ ʀᴇ-ᴘʟᴀʏᴇᴅ \n│ \n└ʙʏ : {mention} "
         await CallbackQuery.answer()
         queued = check[0]["file"]
         title = (check[0]["title"]).title()
