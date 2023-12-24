@@ -7,11 +7,11 @@ from config import LOGGER_ID as LOG_GROUP_ID
 from BrandrdXMusic import app  
 
 photo = [
-    "https://te.legra.ph/file/56665c1fb7457fb847028.jpg",
-    "https://te.legra.ph/file/936df101ca5b97ebdf44c.jpg",
-    "https://te.legra.ph/file/a299c30ec42a6ed7eb5d0.jpg",
-    "https://te.legra.ph/file/bebd65efe37c2ee7d8e32.jpg",
-    "https://te.legra.ph/file/9141f3b892d77dd74a12b.jpg",
+    "https://te.legra.ph/file/aab8ee34e7455ed347c3f.jpg",
+    "https://te.legra.ph/file/aab8ee34e7455ed347c3f.jpg",
+    "https://te.legra.ph/file/aab8ee34e7455ed347c3f.jpg",
+    "https://te.legra.ph/file/aab8ee34e7455ed347c3f.jpg",
+    "https://te.legra.ph/file/aab8ee34e7455ed347c3f.jpg",
 ]
 
 
@@ -24,19 +24,19 @@ async def join_watcher(_, message):
             count = await app.get_chat_members_count(chat.id)
 
             msg = (
-                f"📝 ᴍᴜsɪᴄ ʙᴏᴛ ᴀᴅᴅᴇᴅ ɪɴ ᴀ ɴᴇᴡ ɢʀᴏᴜᴘ\n\n"
+                f"ᴍᴜsɪᴄ ʙᴏᴛ ᴀᴅᴅᴇᴅ ɪɴ ᴀ ɴᴇᴡ ɢʀᴏᴜᴘ\n\n"
                 f"───────────────────────────\n\n"
-                f"🥀 ᴄʜᴀᴛ ɴᴀᴍᴇ: {message.chat.title}\n"
+                f"ᴄʜᴀᴛ ɴᴀᴍᴇ: {message.chat.title}\n"
                 
-                f"🦋 ᴄʜᴀᴛ ɪ'ᴅ: {message.chat.id}\n"
+                f"ᴄʜᴀᴛ ɪ'ᴅ: {message.chat.id}\n"
                 
-                f"💋 ᴄʜᴀᴛ ᴜsᴇʀɴᴀᴍᴇ: @{message.chat.username}\n"
+                f"ᴄʜᴀᴛ ᴜsᴇʀɴᴀᴍᴇ: @{message.chat.username}\n"
                 
-                f"🙈 ᴄʜᴀᴛ ʟɪɴᴋ: [ᴄʟɪᴄᴋ]({link})\n"
+                f"ᴄʜᴀᴛ ʟɪɴᴋ: [ᴄʟɪᴄᴋ]({link})\n"
                 
-                f"😍 ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs: {count}\n"
+                f"ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs: {count}\n"
                 
-                f"❤️‍🔥 ᴀᴅᴅᴇᴅ ʙʏ: {message.from_user.mention}"
+                f"ᴀᴅᴅᴇᴅ ʙʏ: {message.from_user.mention}"
             )
             await app.send_photo(LOG_GROUP_ID, photo=random.choice(photo), caption=msg, reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton(f"★ sᴇᴇ ɢʀᴏᴜᴘ ★", url=f"{link}")]
@@ -64,17 +64,17 @@ async def _greet(_, message):
             count = await app.get_chat_members_count(chat.id)
 
             msg = (
-                f"🌷{member.id}ᴡᴇʟᴄᴏᴍᴇ ɪɴ ᴀ ɴᴇᴡ ɢʀᴏᴜᴘ🥳\n\n"
+                f"{member.id}ᴡᴇʟᴄᴏᴍᴇ ɪɴ ᴀ ɴᴇᴡ ɢʀᴏᴜᴘ\n\n"
                 
-                f"🦋ᴄʜᴀᴛ ɴᴀᴍᴇ: {message.chat.title}\n"
+                f"ᴄʜᴀᴛ ɴᴀᴍᴇ: {message.chat.title}\n"
                 
-                f"🔐ᴄʜᴀᴛ ᴜ.ɴ: @{message.chat.username}\n"
+                f"ᴄʜᴀᴛ ᴜ.ɴ: @{message.chat.username}\n"
                 
-                f"💖ᴜʀ ɪ'ᴅ: {member.id}\n"
+                f"ᴜʀ ɪ'ᴅ: {member.id}\n"
                 
-                f"✍️ᴜʀ ᴜ.ɴᴀᴍᴇ: @{member.username}\n"
+                f"ᴜʀ ᴜ.ɴᴀᴍᴇ: @{member.username}\n"
             
-                f"👥ᴄᴏᴍᴘʟᴇᴛᴇᴅ {count} ᴍᴇᴍʙᴇʀs🎉"
+                f"ᴄᴏᴍᴘʟᴇᴛᴇᴅ {count} ᴍᴇᴍʙᴇʀs"
             )
             await app.send_photo(message.chat.id, photo=random.choice(photo), caption=msg, reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton(f"★ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ★", url=f"https://t.me/{app.username}?startgroup=true")]
